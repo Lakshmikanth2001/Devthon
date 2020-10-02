@@ -1,0 +1,32 @@
+body {
+  background-image: url("");
+  background-repeat: no-repeat;
+}
+
+h2 {
+  display: inline-block;
+}
+.col {
+  text-align: center;
+}
+.row {
+  margin-top: 15px;
+}
+img {
+  border-radius: 15px;
+}
+.fa-university {
+  display: inline-block;
+}
+
+.logo {
+  margin-top: 15px;
+  text-align: center;
+}
+.Image {
+  transition: transform 0.2s;
+}
+
+.Image:hover {
+  transform: scale(1.05);
+}

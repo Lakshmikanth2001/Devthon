@@ -1,0 +1,27 @@
+.logo {
+  border-radius: 35px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.Heading {
+  text-align: center;
+}
+form {
+  margin-top: 25px;
+}
+.form-group {
+  text-align: center;
+}
+
+.btn {
+  margin-top: 5px;
+}
+.formelements {
+  text-align: center;
+  position: center;
+  width: 30%;
+  margin: auto;
+}
+.btn {
+  margin: 10px;
+}

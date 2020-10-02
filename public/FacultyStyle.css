@@ -1,0 +1,11 @@
+.container h1 {
+  text-align: center;
+}
+.container .form {
+  padding: 2rem;
+  width: 60%;
+  margin: 0px auto;
+}
+.addfile input {
+  padding: 2rem;
+}
