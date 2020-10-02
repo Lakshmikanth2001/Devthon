@@ -1,0 +1,67 @@
+<%- include('partials/header') %>
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- JS, Popper.js, and jQuery -->
+  </head>
+  <body class="text-center">
+    <div class="container">
+      <img
+        class="logo shadow-lg"
+        src="https://picsum.photos/seed/picsum/350/350"
+        alt="AppLogo"
+        srcset=""
+      />
+      <h1 class="Heading">
+        Login
+      </h1>
+    </div>
+    <p class="warning"><%=Warning%></p>
+    <form class="container text-center" method="post">
+      <div class="formelements text-center">
+        <div class="form-group">
+            <% if(Warning==''){ %>
+            <input
+                name="Email"
+                type="email"
+                class="form-control shadow-sm"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Enter email"
+            /> <% } else { %>
+                <input
+                name="Email"
+                type="email"
+                class="form-control shadow-sm warningborder"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Enter email"
+                />
+                <% } %>
+        </div>
+        <br />
+        <div class="form-group">
+            <% if(Warning==""){ %>
+                <input
+                    name="Password"
+                    type="password"
+                    class="form-control shadow-sm "
+                    id="exampleInputEmail1"
+                    placeholder="Enter password"
+                /> <% } else { %>
+                    <input
+                    name="Password"
+                    type="password"
+                    class="form-control shadow-sm warningborder"
+                    id="exampleInputEmail1"
+                    placeholder="Enter password"
+                    />
+                    <% } %>
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+        <br />
+        <a href="/SingUp">Not Having an Account? SingUp</a>
+      </div>
+    </form>
+  </body>
+<%- include('partials/footer') %>
