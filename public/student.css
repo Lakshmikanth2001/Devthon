@@ -1,0 +1,42 @@
+.card {
+    text-align: center;
+    margin: auto;
+    transition: transform 0.2s; /* Animation */
+}
+h1{
+    color: white;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.carousel{
+    margin-top:25px;
+}
+.carousel-item {
+    padding: 0% 2%;
+}  
+.carousel-control-prev {
+    width: 25px;
+    margin-left: 50px;
+}
+.carousel-control-next {
+    width: 25px;
+    margin-right:50px;
+}
+.row{
+    text-align: center;
+    z-index: 100;
+}
+.col-lg-4 {
+    margin-top:10px;
+    text-align: center;
+    padding:25px;
+}
+.continer{
+    margin: auto;
+    text-align: center;
+    width: 90%;
+}
+body{
+    background: linear-gradient(to right, #40e0d0, #ff8c00, #ff0080);
+}
