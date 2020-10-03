@@ -112,7 +112,10 @@ async function StudentLogin(req,res){
         res.render("Login",data);
     }
     else{
-      res.render('student');
+      const data={
+        "BranchName":responce.Branch
+      }
+      res.render('student',data);
     }
   });
 }
@@ -141,13 +144,11 @@ async function UploadRequest(req,res){
   if (!req.files || Object.keys(req.files).length === 0) {
     return res.status(400).send("No files were uploaded.");
   }
-  console.log(req.body);
   let sampleFile = req.files.UploadedFile;
   let year=req.body.Year+"\\";
   let branch=req.body.Branch+"\\";
   let subject=req.body.subject+"\\";
   const uploadPath = __dirname + "\\uploads\\" +year+branch+subject+sampleFile.name;
-  console.log(uploadPath);
   sampleFile.mv(uploadPath, function (err) {
     if (err) return res.status(500).send(err);
 
